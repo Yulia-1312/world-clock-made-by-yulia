@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: #c2b9b0;
   font-family: sans-serif;
 }
 h1 {
@@ -14,25 +14,26 @@ select {
   display: block;
   width: 100%;
   font-size: 18px;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 6px;
 }
 
 .container {
-  max-width: 600 px;
-  margin: 30px auto;
+  max-width: 500 px;
+  margin: 15px auto;
   padding: 1cm;
-  border-radius: 6px;
+  border-radius: 25%;
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
     1px 1px 5px rgba(255, 255, 255, 1);
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #b0aac0;
+  background-color: #7e685a;
 }
 .city {
   display: flex;
-  margin: 10px 0;
+  margin: 5px 0;
   justify-content: space-between;
-  padding: 30px 0;
+  color: pink;
+  padding: 15px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 .city:last-child {

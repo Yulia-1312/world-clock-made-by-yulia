@@ -18,7 +18,16 @@ function updateTime() {
   losAngelesTimeElement.innerHTML = losAngelesTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  let singaporeElement = document.querySelector("#singapore");
+  let singaporeDateElement = singaporeElement.querySelector(".date");
+  let singaporeTimeElement = singaporeElement.querySelector(".time");
+  let singaporeTime = moment().tz("Asia/Singapore");
+  singaporeDateElement.innerHTML = singaporeTime.format("MMMM Do YYYY");
+  singaporeTimeElement.innerHTML = singaporeTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -35,7 +44,8 @@ function updateCity(event) {
       <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
     "A"
   )}</small></div>
-    </div>`;
+    </div>
+    <a href="/">👈🏻Back to homepage</a>`;
 }
 
 updateTime();
