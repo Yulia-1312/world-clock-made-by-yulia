@@ -21,7 +21,7 @@ select {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: auto;
+  width: 80%;
   font-size: 20px;
   text-shadow: var(--main-shadow);
   border-radius: 15px;
@@ -72,6 +72,10 @@ footer {
     font-size: 10px;
   }
   .time {
-    font-size: 28px;
+    font-size: 24px;
+    text-align: end;
+  }
+  .container {
+    box-shadow: none;
   }
 }
